@@ -751,7 +751,7 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
             DefaultListModel modeloLISTA = (DefaultListModel) jl_personas.getModel();
             ((Estudiantes) modeloLISTA.get(jl_personas.getSelectedIndex())).setNombre(JOptionPane.showInputDialog("Nombre"));
             ((Estudiantes) modeloLISTA.get(jl_personas.getSelectedIndex())).setApellido(JOptionPane.showInputDialog("Apellido"));
-            ((Estudiantes) modeloLISTA.get(jl_personas.getSelectedIndex())).setEdad(Integer.parseInt(JOptionPane.showInputDialog("Año")));
+            ((Estudiantes) modeloLISTA.get(jl_personas.getSelectedIndex())).setEdad(Integer.parseInt(JOptionPane.showInputDialog("Edad")));
             ((Estudiantes) modeloLISTA.get(jl_personas.getSelectedIndex())).setCarrera(JOptionPane.showInputDialog("Carrera"));
             ((Estudiantes) modeloLISTA.get(jl_personas.getSelectedIndex())).setGenero(JOptionPane.showInputDialog("Genero"));
         }

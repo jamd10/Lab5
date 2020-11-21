@@ -27,10 +27,10 @@ public class Maestros extends Persona {
     public void setClase(ArrayList clase) {
         this.clase = clase;
     }
-    
+
     @Override
     public String toString() {
-        return this.toString() + "Maestros{" + "Salario=" + Salario + ", clase=" + clase + '}';
+        return super.toString() + ' ' + Salario + ' ' + clase;
     }
 
 }

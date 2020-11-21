@@ -787,6 +787,9 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
         DefaultTreeModel m = (DefaultTreeModel) jt_personas.getModel();
         persona_seleccionada.setNombre(JOptionPane.showInputDialog("Nombre"));
         persona_seleccionada.setApellido(JOptionPane.showInputDialog("Apellido"));
+        persona_seleccionada.setEdad(Integer.parseInt(JOptionPane.showInputDialog("Edad")));
+        persona_seleccionada.setCarrera(JOptionPane.showInputDialog("Carrera"));
+        persona_seleccionada.setGenero(JOptionPane.showInputDialog("Genero"));
         m.reload();
     }//GEN-LAST:event_opcion_modificarActionPerformed
 
@@ -840,7 +843,17 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
     }//GEN-LAST:event_jl_CMouseClicked
 
     private void jl_CKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jl_CKeyPressed
-        // TODO add your handling code here:
+        if (evt.getKeyCode() == evt.VK_DELETE) {
+            if (jl_C.getSelectedIndex() >= 0) {
+                DefaultListModel modelo
+                        = (DefaultListModel) jl_C.getModel();
+                modelo.remove(jl_C.getSelectedIndex());
+                jl_C.setModel(modelo);
+                JOptionPane.showMessageDialog(this,
+                        "Eliminado exitosamente");
+
+            }
+        }
     }//GEN-LAST:event_jl_CKeyPressed
 
     private void btnM1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnM1MouseClicked
@@ -892,7 +905,17 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
     }//GEN-LAST:event_JLcarrerasMouseClicked
 
     private void JLcarrerasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_JLcarrerasKeyPressed
-        // TODO add your handling code here:
+        if (evt.getKeyCode() == evt.VK_DELETE) {
+            if (JLcarreras.getSelectedIndex() >= 0) {
+                DefaultListModel modelo
+                        = (DefaultListModel) JLcarreras.getModel();
+                modelo.remove(JLcarreras.getSelectedIndex());
+                JLcarreras.setModel(modelo);
+                JOptionPane.showMessageDialog(this,
+                        "Eliminado exitosamente");
+
+            }
+        }
     }//GEN-LAST:event_JLcarrerasKeyPressed
 
     private void crActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crActionPerformed

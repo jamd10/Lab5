@@ -48,7 +48,7 @@ public class Carrera {
 
     @Override
     public String toString() {
-        return Nombre + " " + Facultad + " " + Costo_Mensual + " " + Jefe_Carrera + '}';
+        return Nombre + " " + Facultad + " " + Costo_Mensual + " " + Jefe_Carrera;
     }
 
 }

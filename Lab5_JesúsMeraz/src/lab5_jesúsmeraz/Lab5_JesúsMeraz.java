@@ -36,7 +36,6 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
         popup_modificar = new javax.swing.JPopupMenu();
         jmi_modificar = new javax.swing.JMenuItem();
         menu_popup = new javax.swing.JPopupMenu();
-        opcion_edad = new javax.swing.JMenuItem();
         opcion_eliminar = new javax.swing.JMenuItem();
         opcion_modificar = new javax.swing.JMenuItem();
         opcion_Cuenta = new javax.swing.JMenuItem();
@@ -114,15 +113,8 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
         });
         popup_modificar.add(jmi_modificar);
 
-        opcion_edad.setText("ver edad");
-        opcion_edad.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opcion_edadActionPerformed(evt);
-            }
-        });
-        menu_popup.add(opcion_edad);
-
         opcion_eliminar.setText("eliminar persona");
+        opcion_eliminar.setActionCommand("Eliminar");
         opcion_eliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 opcion_eliminarActionPerformed(evt);
@@ -131,6 +123,7 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
         menu_popup.add(opcion_eliminar);
 
         opcion_modificar.setText("modificar nombre");
+        opcion_modificar.setActionCommand("Modificar");
         opcion_modificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 opcion_modificarActionPerformed(evt);
@@ -757,14 +750,6 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jmi_modificarActionPerformed
 
-    private void opcion_edadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion_edadActionPerformed
-        // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this,
-                "TIENE UNA EDAD DE " + persona_seleccionada.
-                        getEdad()
-                + " AÑOS");
-    }//GEN-LAST:event_opcion_edadActionPerformed
-
     private void opcion_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion_eliminarActionPerformed
         // TODO add your handling code here:
         int response = JOptionPane.showConfirmDialog(
@@ -1027,7 +1012,6 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
     private javax.swing.JTree jt_personas;
     private javax.swing.JPopupMenu menu_popup;
     private javax.swing.JMenuItem opcion_Cuenta;
-    private javax.swing.JMenuItem opcion_edad;
     private javax.swing.JMenuItem opcion_eliminar;
     private javax.swing.JMenuItem opcion_modificar;
     private javax.swing.JPopupMenu popup_modificar;

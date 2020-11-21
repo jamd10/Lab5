@@ -24,17 +24,10 @@
         <Property name="useNullLayout" type="boolean" value="true"/>
       </Layout>
       <SubComponents>
-        <MenuItem class="javax.swing.JMenuItem" name="opcion_edad">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="ver edad"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion_edadActionPerformed"/>
-          </Events>
-        </MenuItem>
         <MenuItem class="javax.swing.JMenuItem" name="opcion_eliminar">
           <Properties>
             <Property name="text" type="java.lang.String" value="eliminar persona"/>
+            <Property name="actionCommand" type="java.lang.String" value="Eliminar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion_eliminarActionPerformed"/>
@@ -43,6 +36,7 @@
         <MenuItem class="javax.swing.JMenuItem" name="opcion_modificar">
           <Properties>
             <Property name="text" type="java.lang.String" value="modificar nombre"/>
+            <Property name="actionCommand" type="java.lang.String" value="Modificar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion_modificarActionPerformed"/>

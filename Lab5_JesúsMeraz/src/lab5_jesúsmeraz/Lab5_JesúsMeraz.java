@@ -199,7 +199,7 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jl_personas);
 
-        CE.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Finanzas", " Derecho", "Administración de Empresas", "Diseño Gráfico", "Mercadotecnia", "Sistemas Computacionales", "Industrial y de Sistemas", "Mecatrónica", "Biomédica", "Energía", "Medicina y Cirugía", "Odontología", "Nutrición y Terapia Física", "Ocupacional. ", " " }));
+        CE.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Finanzas", " Derecho", "Administración de Empresas", "Diseño Gráfico", "Mercadotecnia", "Sistemas Computacionales", "Industrial y de Sistemas", "Mecatrónica", "Biomédica", "Energía", "Medicina y Cirugía", "Odontología", "Nutrición y Terapia Física", "Ocupacional" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -719,7 +719,6 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
                     centinela = 1;
                 } //fin if
             } //fin for  
-
             if (centinela == -1) {
                 DefaultMutableTreeNode n
                         = new DefaultMutableTreeNode(Carrera);
@@ -751,7 +750,7 @@ public class Lab5_JesúsMeraz extends javax.swing.JFrame {
     }//GEN-LAST:event_jmi_modificarActionPerformed
 
     private void opcion_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion_eliminarActionPerformed
-        // TODO add your handling code here:
+        // se elimina por la tecla suprimir o delete
         int response = JOptionPane.showConfirmDialog(
                 this,
                 "Seguro de Eliminar?",
